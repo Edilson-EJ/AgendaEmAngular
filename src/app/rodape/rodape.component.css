@@ -1,0 +1,9 @@
+.titulo_rodape{
+    background-color: #160000;
+    color: #fffddd;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content:space-around;
+    font-family: 'Open Sans', sans-serif;
+}

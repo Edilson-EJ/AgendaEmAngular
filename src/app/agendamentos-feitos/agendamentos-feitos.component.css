@@ -1,0 +1,55 @@
+.principal_compromissos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #a79191;
+    color: #300606;
+
+    
+}
+
+.titulo_compromisso {
+    font-size: 3.2rem;
+    padding-bottom: 2rem;
+}
+
+.agendamento_compromissos{
+    text-decoration: none;
+    border: 2px solid #1d02021a;
+    margin-bottom: 1.5rem;
+    
+}
+
+.itens_compromissos ul{
+    display: flex;
+    color: #300606;
+    justify-content: space-around;
+    list-style: none;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.botoes{
+    gap: 2rem;
+    margin-bottom: 3rem;
+    
+}
+
+#concluir{
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: #300606;
+    color: #ffffff;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#deletar{
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: #300606;
+    color: #ffffff;
+    cursor: pointer;
+}
