@@ -10,6 +10,7 @@ import { AgendamentosFeitosComponent } from './agendamentos-feitos/agendamentos-
 
 import { FormsModule } from '@angular/forms';
 import { TesteAdicaoComponent } from './teste-adicao/teste-adicao.component';
+import { ListRenderComponent } from './list-render/list-render.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TesteAdicaoComponent } from './teste-adicao/teste-adicao.component';
     PaginaDeAgendamentoComponent,
     RodapeComponent,
     AgendamentosFeitosComponent,
-    TesteAdicaoComponent
+    TesteAdicaoComponent,
+    ListRenderComponent
   ],
   imports: [
     BrowserModule,

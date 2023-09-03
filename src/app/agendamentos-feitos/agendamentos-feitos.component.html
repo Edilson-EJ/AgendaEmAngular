@@ -3,56 +3,28 @@
         <h3> {{ compromisso }} </h3>
     </div>
 
+
+
     <div class="agendamento_compromissos">
 
         <section class="itens_compromissos">
             <ul>
-                <li> {{ agenda.nome }} </li>
-                <li>{{ agenda.data }}</li>
-                <li>{{ agenda.email }}</li>
-                <li>{{ agenda.celular }}</li>
-                <li>{{ agenda.assunto }}</li>
+                <li *ngFor="let item of items; let i = index"> 
+                    <span>Nome: {{ item.nome }}  </span> 
+                    <span>Data: {{ item.data }} </span>
+                    <span>Email: {{ item.email }}  </span>
+                    <span>Celular: {{ item.celular }} </span>
+                    <span>Assunto: {{ item.assunto }} </span>
+                    <section class="botoes">
+                        <button (click)="concluirTarefa()" id="concluir">Concluir</button>
+                        <button (click)="removeTarefa(items)" id="deletar" >Deletar</button>
+                    </section>
+                </li>
+
             </ul>
         </section>
 
-        <section class="botoes">
-            <button id="concluir">Concluir</button>
-            <button id="deletar">Deletar</button>
-        </section>
     
-    </div>
-
-    <div class="agendamento_compromissos">
-
-        <section class="itens_compromissos">
-            <ul>
-                <li> {{ agenda.nome }} </li>
-                <li>{{ agenda.data }}</li>
-                <li>{{ agenda.email }}</li>
-                <li>{{ agenda.celular }}</li>
-                <li>{{ agenda.assunto }}</li>
-            </ul>
-        </section>
-
-        <section class="botoes">
-            <button id="concluir">Concluir</button>
-            <button id="deletar">Deletar</button>
-        </section>
-    
-    </div>
-
-    <div class="agendamento_compromissos">
-
-        <section class="itens_compromissos">
-            <ul>
-                <li *ngFor="let item of items"> {{ items }} </li>
-            </ul>
-        </section>
-
-        <section class="botoes">
-            <button id="concluir">Concluir</button>
-            <button id="deletar">Deletar</button>
-        </section>
     
     </div>
 

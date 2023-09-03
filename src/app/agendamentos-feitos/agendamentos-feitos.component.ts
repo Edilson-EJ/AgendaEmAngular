@@ -19,7 +19,22 @@ export class AgendamentosFeitosComponent {
   }
 
 
-  public items = [ this.agenda.nome, this.agenda.email, this.agenda.data, this.agenda.celular, this.agenda.assunto ]
+  public items = [ {nome: 'edilson', email: 'nada.com',data: '12/08/2023', celular: '88 999808045', assunto: 'projeto angular'},
+                    {nome: 'mundo', email: 'nada.com',data: '12/08/2023', celular: '88 999808045', assunto: 'java'},
+                    {nome: 'mundo', email: 'nada.com',data: '12/08/2023', celular: '88 999808045', assunto: 'react'},
+                    {nome: 'mundo', email: 'nada.com',data: '12/08/2023', celular: '88 999808045', assunto: 'MySql'},
+                    {nome: 'mundo', email: 'nada.com',data: '12/08/2023', celular: '88 999808045', assunto: 'ruby'}
+                  ]
+  
+  removeTarefa(itens: any){
+      this.items.splice( this.items.indexOf(itens),1)
 
+  }
+
+  concluirTarefa(){
+    const element = document.querySelector('li')
+    element?.classList.add("riscaTarefa")    
+  }
+                
 
 }
