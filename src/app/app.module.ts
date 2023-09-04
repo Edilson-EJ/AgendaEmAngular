@@ -4,28 +4,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { PaginaDeAgendamentoComponent } from './pagina-de-agendamento/pagina-de-agendamento.component';
 import { RodapeComponent } from './rodape/rodape.component';
-import { AgendamentosFeitosComponent } from './agendamentos-feitos/agendamentos-feitos.component';
 
-import { FormsModule } from '@angular/forms';
-import { TesteAdicaoComponent } from './teste-adicao/teste-adicao.component';
-import { ListRenderComponent } from './list-render/list-render.component';
+import { FormsModule, } from '@angular/forms';
+import { Validators, FormGroup, FormBuilder } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MeuFormularioComponent } from './meu-formulario/meu-formulario.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PaginaDeAgendamentoComponent,
     RodapeComponent,
-    AgendamentosFeitosComponent,
-    TesteAdicaoComponent,
-    ListRenderComponent
+    MeuFormularioComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
